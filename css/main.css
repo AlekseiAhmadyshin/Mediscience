@@ -25,6 +25,7 @@
     font-weight: 300;
 }
 
+
 body {
     background-color: black;
     background-image: url(../mediscinceIMG/angel.png);
@@ -38,6 +39,8 @@ body {
     height: var(--depth);
     font-weight: 300;
 }
+
+
 
 .container {
     width: 100%;
@@ -74,6 +77,7 @@ h4 {
 .frame h2 {
     text-align: center;
     font-size: calc(var(--index) * 4);
+    width: min-content;
 }
 
 .frame-media {
@@ -94,4 +98,49 @@ h4 {
 
 .frame_bg {
     background-color: rgb(0 0 0 / .9);
+}
+
+video.freme-media {
+    width: calc(var(--index) *var(--side-big));
+    height: calc(var(--index) *var(--side-small));
+}
+
+video.freme-media_right {
+    left: calc(var(--side-big) / 2 *var(--index) + var(--gutter));
+}
+
+video.frame-media-left {
+    right: calc(var(--side-small) / 2 *var(--index) + var(--gutter));
+}
+
+.gorizont__left {
+    width: calc(var(--index) *var(--side-big));
+    height: calc(var(--index) *var(--side-small));
+    right: calc(var(--side-small) / 2 *var(--index) + var(--gutter));
+}
+
+.gorizont__right {
+    width: calc(var(--index) *var(--side-big));
+    height: calc(var(--index) *var(--side-small));
+    left: calc(var(--side-small) / 2 *var(--index) + var(--gutter));
+}
+
+.text-right>* {
+    position: relative;
+    left: 40vw;
+}
+
+.frame h3 {
+    font-size: calc(var(--index) * 2);
+    max-width: 50vw;
+}
+
+.frame p {
+    max-width: 40vw;
+    margin-top: 5vh;
+}
+
+.text-left {
+    position: relative;
+    right: 20vw;
 }
